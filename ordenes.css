@@ -1,0 +1,250 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mis Órdenes | Quilmes Rock 2027</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- SECCION ORDENES -->
+
+<section class="orders">
+
+    <h1>MIS ÓRDENES</h1>
+
+    <!-- ORDEN 1 -->
+
+    <div class="order-card">
+
+        <h2>REMERA OFICIAL</h2>
+
+        <p>Pedido #2027</p>
+
+        <span>ENTREGADO</span>
+
+    </div>
+
+    <!-- ORDEN 2 -->
+
+    <div class="order-card">
+
+        <h2>ABONO VIP</h2>
+
+        <p>Pedido #2028</p>
+
+        <span>EN PROCESO</span>
+
+    </div>
+
+    <!-- ORDEN 3 -->
+
+    <div class="order-card">
+
+        <h2>GORRA QUILMES ROCK</h2>
+
+        <p>Pedido #2029</p>
+
+        <span>CONFIRMADO</span>
+
+    </div>
+
+</section>
+
+</body>
+</html>
+```
+
+```css
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+
+    background: #000;
+
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* SECCION ORDENES */
+
+.orders{
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding: 140px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: black;
+}
+
+/* TITULO */
+
+.orders h1{
+
+    font-family: 'Anton', sans-serif;
+
+    font-size: 90px;
+
+    margin-bottom: 60px;
+
+    letter-spacing: 3px;
+
+    text-align: center;
+}
+
+/* TARJETAS */
+
+.order-card{
+
+    width: 100%;
+
+    max-width: 700px;
+
+    background: #111;
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    margin-bottom: 30px;
+
+    transition: 0.4s;
+
+    border-left: 8px solid #00AEEF;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* HOVER */
+
+.order-card:hover{
+
+    transform: translateY(-10px);
+
+    background: #1a1a1a;
+}
+
+/* TITULO TARJETA */
+
+.order-card h2{
+
+    font-family: 'Anton', sans-serif;
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+/* TEXTO */
+
+.order-card p{
+
+    font-size: 18px;
+
+    margin-bottom: 20px;
+
+    color: #c7c7c7;
+}
+
+/* ESTADO */
+
+.order-card span{
+
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border-radius: 12px;
+
+    background: #00AEEF;
+
+    color: white;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+/* RESPONSIVE TABLET */
+
+@media(max-width: 768px){
+
+    .orders h1{
+
+        font-size: 55px;
+    }
+
+    .order-card{
+
+        padding: 30px 20px;
+    }
+
+    .order-card h2{
+
+        font-size: 30px;
+    }
+
+    .order-card p{
+
+        font-size: 16px;
+    }
+}
+
+/* RESPONSIVE MOBILE */
+
+@media(max-width: 480px){
+
+    .orders{
+
+        padding: 120px 15px;
+    }
+
+    .orders h1{
+
+        font-size: 40px;
+    }
+
+    .order-card h2{
+
+        font-size: 24px;
+    }
+
+    .order-card span{
+
+        width: 100%;
+
+        text-align: center;
+    }
+}
+```
